@@ -19,27 +19,39 @@
 
 ## 주요분석 내용
 1. 데이터 이해와 전처리 과정
-- 의료 이미지 데이터 이해
-- 이미지 정규화, 데이터 라벨링 등의 전처리   
+   - 의료 이미지 데이터 이해
+   - 이미지 정규화, 데이터 라벨링 등의 전처리   
 2. 모델 개발
-- CNN을 사용하여 의료 영상 분류 모델을 만듦
+   - CNN을 사용하여 의료 영상 분류 모델을 만듦
 3. 모델 평가& 결과 시각화
- 
 4. 만들어진 모델 활용
-- 전문가 버전 
-최신 연구 결과와 임상 지침, 치료제, 치료 방법에 관한 정보를 모델에 주기적으로 업데이트하여 교육자료나 치료 방법 제공
+   - 모델을 이용하여 요추 퇴행성 질환 예측
+   - 이를 바탕으로 질환에 따른 약물치료, 치료방법 추천
+   - openpose 알고리즘을 적용하여 환자의 자세를 분석하고,
+ 이를 바탕으로 환자 자세교정 및 운동법 추천
+   - 운동법및 자세교정을 자연어 처리모델을 활용하여 직관적으로 이해하기 쉽게 설명.
 
 ## 기대효과
 요추퇴행성 통증 정도와 증상을 정확히 분류하고 이에 따른 알맞은 대처 및 운동방법을 제시하여 향후 관리에 도움이 될 수 있다.
 
 ## 기능
-kaggle RSNA 2024 Lumbar Spine Degenerative 데이터를 이용하여 python의 pandas, sklearn등의 모듈을 활용하여 데이터 전처리와 분석, 딥러닝 모델링을 하여 각 환자의 통증정도를 분류하고 이에 따른 향후 관리법을 추천시스템을 활용하여 웹사이트 기반으로 제안한다.
+- kaggle RSNA 2024 Lumbar Spine Degenerative 데이터를 이용 
+
+- python의 pandas, sklearn 모듈을  사용하여  데이터 전처리와 분석
+
+- cnn을 활용한 딥러닝 모델링을 하여 각 환자의 통증정도를 분류하여 이에 따른 운동 방법과 자세를 추천
+
+- openpose 알고리즘을 활용해서 운동 및 자세를 인식하고 교정
+    - 환자가 더 직관적으로 알아들을 수 있게 자연어 처리를 활용하여 텍스트를 생성하고 이를 음성으로 말해주는 api를 연동하여 운동을 하며 즉각 피드백
+
 
 ## 사용기술(툴)
-- python
+- python, pandas, sklearn
 - cnn
+- openpose 알고리즘
+- 자연어처리부분(?)
 - django
-- jupythernotebook
+- jupythernotebook, 구글코랩
 - 협업툴
   - github
 - 
@@ -47,4 +59,4 @@ kaggle RSNA 2024 Lumbar Spine Degenerative 데이터를 이용하여 python의 p
 
 ## 데이터 출처
 - [캐글-요추퇴행성분류](https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification/overview)
-- 
+- [AIHub-퇴행성 척추질환데이터](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=611)
