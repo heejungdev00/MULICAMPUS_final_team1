@@ -6,12 +6,24 @@
 ## 구성원(역할)
 **추희정**
 ```
+- 요추 퇴행성 분류 모델 총괄
+
+- 웹사이트 자연어처리모델 연동
+
+- 바로가기 연동
 ```
 **전은채**
 ```
+-웹사이트 총괄
 ```
 **조한영**
 ```
+-요추 퇴행성 분류 샘플모델 모델링
+
+-자세교정모델 모델링,총괄
+
+-자연어처리모델 모델링,총괄
+
 ```
 
 ## 프로젝트 주제
@@ -26,6 +38,7 @@
    - 이미지 정규화, 데이터 라벨링 등의 전처리   
 2. 모델 개발
    - CNN을 사용하여 의료 영상 분류 모델을 만듦
+   - s2s모델을 활용하여 피드백 모델 개발
 3. 모델 평가& 결과 시각화
 4. 만들어진 모델 활용
    - 모델을 이용하여 요추 퇴행성 질환 예측
@@ -33,6 +46,7 @@
    - openpose 알고리즘을 적용하여 환자의 자세를 분석하고,
  이를 바탕으로 환자 자세교정 및 운동법 추천
    - 운동법및 자세교정을 자연어 처리모델을 활용하여 직관적으로 이해하기 쉽게 설명.
+   - tts를 활용하여 사용자가 음성으로 피드백을 들을 수 있게 생성
 
 ## 기대효과
 요추퇴행성 통증 정도와 증상을 정확히 분류하고 이에 따른 알맞은 대처 및 운동방법을 제시하여 향후 관리에 도움이 될 수 있다.
@@ -49,17 +63,20 @@
 
 
 ## 사용기술(툴)
-- python, pandas, sklearn
+- python, pandas, sklearn, tensorflow
 - cnn
-- openpose 알고리즘
-- 자연어처리부분(?)
+- openpose 알고리즘(mediapipe)
+- s2s
 - django
 - jupythernotebook, 구글코랩
 - 협업툴
   - github
-- 
+  - googledrive
+  - 
 ## 구현방법
+**최종 보고서 참고**
+
 
 ## 데이터 출처
 - [캐글-요추퇴행성분류](https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification/overview)
-- [AIHub-퇴행성 척추질환데이터](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=611)
+- 자연어처리 모델은 직접 제작
