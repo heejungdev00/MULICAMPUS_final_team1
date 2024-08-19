@@ -75,7 +75,7 @@
   - 
 ## 구현방법
 **최종 보고서 참고**
-![시연영상](시연영상.gif)
+![시연영상](report/시연영상.gif)
 
 ## 데이터 출처
 - [캐글-요추퇴행성분류](https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification/overview)

@@ -1,4 +1,0 @@
-참고논문 
-Lin, Yiqiao, Xueyan Jiao, and Lei Zhao. "Detection of 3d human posture based on improved mediapipe." Journal of Computer and Communications 11.2 (2023): 102-121. (mediapipe논문)
-Kwon, Yejin, and Dongho Kim. "Real-Time workout posture correction using OpenCV and MediaPipe." 한국정보기술학회논문지 20.1 (2022): 199-208. (운동자세피드백 논문)
-Mroz, Sarah, et al. "Comparing the quality of human pose estimation with blazepose or openpose." 2021 4th International Conference on Bio-Engineering for Smart Technologies (BioSMART). IEEE, 2021.(blazepose openpose 비교논문)
